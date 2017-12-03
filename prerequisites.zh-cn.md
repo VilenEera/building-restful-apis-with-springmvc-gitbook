@@ -1,16 +1,16 @@
-# Prerequisites
+# 先决条件
 
-Before writing any codes, please install the latest JDK 8, Apache Maven, and your favorate IDE.
+在编写任何代码之前, 请安装最新的 JDK 8, Apache Maven, 以及您喜欢的 IDE.
 
 ## Java 8
 
-Oracle Java 8 is recommended. For Windows user, just go to [Oracle Java website](http://java.oracle.com) to download it and install into your system. Redhat has just released a OpenJDK 8 for Windows user at DevNation 2016, if you are stick on the OpenJDK, go to [Redhat Developers website](https://developers.redhat.com) and get it.
+建议使用 Oracle Java 8. 对于 Windows 用户, 只需要到 [Oracle Java 网站](http://java.oracle.com)下载并安装到您的系统. Redhat 刚刚在 DevNation 2016 上发布了 OpenJDK 8 给 Windows 用户 , 如果你坚持使用 OpenJDK, 请去 [Redhat Developers 网站](https://developers.redhat.com) 获取.
 	
-Most of the Linux distributions includes the OpenJDK, install it via the Linux package manager.
+大多数 Linux 发行版都包含 OpenJDK, 通过 Linux 软件包管理器进行安装.
 
-Optionally, you can set **JAVA\_HOME** environment variable and add *&lt;JDK installation dir>/bin* in your **PATH** environment variable.
+可选, 您可以设置 **JAVA\_HOME** 环境变量,并在 **PATH** 环境变量中添加 *&lt;JDK 安装目录>/bin*.
 
-Type this command in system terminal to verify your Java environment installed correctly.
+在系统终端中键入此命令以验证您的 Java 环境是否正确安装.
 
 ```
 #java -version
@@ -21,11 +21,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.102-b14, mixed mode)
 
 ## Apache Maven
    
-Download the latest Apache Maven from [http://maven.apache.org](http://maven.apache.org), and uncompress it into your local system. 
+下载最新的 Apache Maven 版本 [http://maven.apache.org](http://maven.apache.org), 在本地系统中解压缩它. 
 
-Optionally, you can set **M2\_HOME** environment varible, and also do not forget to append *&lt;Maven Installation dir>/bin* your **PATH** environment variable.  
+可选, 你可以设置 **M2\_HOME** 环境变量, 也不要忘记追加 *&lt;Maven 安装目录>/bin* 去您的 **PATH** 环境变量.  
 
-Type the following command to verify Apache Maven is working.
+输入以下命令来验证 Apache Maven 正在工作.
 
 ```
 #mvn -v
@@ -37,62 +37,62 @@ Default locale: en_US, platform encoding: Cp1252
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "dos"
 ```	
 	
-If you are a Gradle fan, you can use Gradle as build tool. Gradle could be an alternative of Apache Maven.
+如果你是 Gradle 的粉丝, 你可以使用 Gradle 作为构建工具. Gradle 可以成为 Apache Maven 的替代品.
 
 ## Lombok
 
-I would like use Lombok to simply codes and make the codes clean. Go to [Lombok project](https://projectlombok.org/) to get know with Lombok.
+我想用 Lombok 来简单地编码,并使代码清洁. 请去[Lombok project](https://projectlombok.org/)了解 Lombok.
 
-There is a good [introduction to Lombok](http://www.baeldung.com/intro-to-project-lombok) from baeldung's blog.
+baeldung 的博客有一份很好的 [Lombok 介绍](http://www.baeldung.com/intro-to-project-lombok).
 
 ## IDE 
 
-The source codes are Maven based, it is IDE independent, so you can choose your favorate IDE. Nowdays the popular IDEs includes Eclipse, IDEA, NetBeans.
+源代码是基于 Maven, 独立于 IDE, 所以你可以选择你喜欢的 IDE. 目前流行的 IDEs 包括 Eclipse, IDEA, NetBeans.
 
-We will use JPA critera metadata to provide type safe query, and use Lombok to simplfy the codes, you have to enable **Annotation Processing** feature in your IDEs. 
+我们将使用 JPA 标准元数据提供类型安全的查询,并使用 Lombok 来简化代码, 您必须在您的 IDEs 中启用 **Annotation Processing** 功能. 
 
-### Spring ToolSuite
+### Spring Tool Suite
 
-Spring Tool Suite is an Eclipse based IDE, and provides a lot of built-in Spring supports, it is highly recommended for new Spring users.
+Spring Tool Suite 是一个基于 Eclipse 的 IDE, 并提供了很多内置的 Spring 支持,强烈建议新的 Spring 用户使用.
 
-Go to [Spring official site](https://spring.io), download a copy of [Spring Tool Suite](https://spring.io/tools/sts). At the moment, the latest version is 3.8.
+跳转至 [Spring 官网站点](https://spring.io),下载一份[Spring Tool Suite](https://spring.io/tools/sts) 的副本. 目前最新的版本是 3.8.
 
-Alternatively, you can download a copy of Eclipse Java EE bundle from [Eclise official website](https://www.eclipse.org), and install the STS plugin from Eclipse Marketplace.
+或者,您可以从 [Eclise official website](https://www.eclipse.org) 下载 Eclipse Java EE bu软件包的副本 , 并从 Eclipse 市场 安装 STS 插件.
 	
-Extract the files into your local disk. Go to root folder, there is **STS.exe** file, double click it and starts up Spring Tool Suite.
+将文件解压缩到本地磁盘. 进入根文件夹,有 **STS.exe** 文件, 双击它并启动 Spring Tool Suite.
 
-1. Go to Windows/Preference menu, and open Preference dialog
-2. Search `Annotation`...
-3. Expand *Compiler/ Annotation Processing* , enable **Annotation Processing**.
-4. Expand *Maven/Annotation Processing*, enable **Annotation Processing**. If it does not exists, install **m2e-apt** in **Maven/Discovery** firstly.
-5. Apply all changes.
+1. 点击 Windows/Preference 菜单, 打开 Preference 对话框
+2. 搜索 `Annotation`...
+3. 展开 *Compiler/ Annotation Processing* , 允许 **Annotation Processing**.
+4. 展开 *Maven/Annotation Processing*, 允许 **Annotation Processing**. 如果不存在该选项, 首先在 **Maven/Discovery** 安装 **m2e-apt**.  
+5. 应用所有更改.
 
-Go to Lombok project website, and follow the official [the installation guideline](https://projectlombok.org/setup/eclipse)) to install Lombok plugin into your Eclipse IDE.
+跳转 Lombok 项目网站, 并按照官方 [安装指南](https://projectlombok.org/setup/eclipse)) 将 Lombok 插件安装到 Eclipse IDE 中.
 
 ### Intellij IDEA	
 
-No doubt, [Intellij IDEA](https://www.jetbrains.com/idea) is the most productive Java IDE. It includes free and open source community version and enterprise version.
+毫无疑问, [Intellij IDEA](https://www.jetbrains.com/idea) 是最有生产力的 Java IDE. 它包括免费的开源社区版本和企业版本.
 
-1. Go to File / Settings 
-2. Search `annotation processor`
-3. Enable Annotation processing
+1. 点击 File / Settings 
+2. 搜索 `annotation processor`
+3. 允许 Annotation processing
 
 You can install Lombok plugin from IDEA plugin manager to get Lombok support in your IDEA.
 
-1. Go to File / Settings / Plugins
-2. Click on Browse repositories...
-3. Search for `Lombok Plugin`
-4. Click on Install plugin
-5. Restart IDE 
+1. 点击 File / Settings / Plugins
+2. 点击 Browse repositories...
+3. 搜索 `Lombok Plugin`
+4. 点击 Install plugin
+5. 重启 IDE 
 
 ### NetBeans
 
-[NetBeans](http://www.netbeans.org) is the simplest IDE for Java development, which was originally brought by Sun microsystem(and later maintained by Oracle), it is free and open source. 
+[NetBeans](http://www.netbeans.org)是 Java 开发最简单的 IDE, 最初由 Sun (后来由 Oracle 维护) 提供, 它是免费且开源的.
 
-Now Oracle denoted it as [an incubator project under Apache Foundation](http://netbeans.apache.org).
+现在 Oracle 把它称为 [Apache 基金会下的一个孵化器项目](http://netbeans.apache.org).
 
-Download a copy of NetBeans from [netbeans website](https://netbeans.org)(it is still working before Apache hand over it).
+从 [netbeans 网站](https://netbeans.org) 下载 NetBeans 的副本(在 Apache 移交之前它仍然在运行).
 
-For NetBeans users, there is no need to setup Annotation Processing and Lombok, NetBeans has activiated Annotation processing capability by default.
+NetBeans 用户, 不需要设置 Annotation Processing 以及 Lombok, NetBeans 默认情况下已经激活 Annotation processing 功能.
 
-In the next posts, let's try to create a project skeleton for our blog sample application.
+在接下来的文章中, 让我们尝试为我们的博客示例应用程序创建一个项目框架.
