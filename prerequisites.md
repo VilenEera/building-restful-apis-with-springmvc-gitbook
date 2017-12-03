@@ -49,7 +49,7 @@ There is a good [introduction to Lombok](http://www.baeldung.com/intro-to-projec
 
 The source codes are Maven based, it is IDE independent, so you can choose your favorate IDE. Nowdays the popular IDEs includes Eclipse, IDEA, NetBeans.
 
-We will use JPA critera metadata to provide type safe query, and use Lombok to simplfy the codes, you have to enable **Annotation Processing** feature in your IDEs. 
+We will use JPA criteria metadata to provide type safe query, and use Lombok to simplfy the codes, you have to enable **Annotation Processing** feature in your IDEs. 
 
 ### Spring ToolSuite
 
@@ -93,6 +93,6 @@ Now Oracle denoted it as [an incubator project under Apache Foundation](http://n
 
 Download a copy of NetBeans from [netbeans website](https://netbeans.org)(it is still working before Apache hand over it).
 
-For NetBeans users, there is no need to setup Annotation Processing and Lombok, NetBeans has activiated Annotation processing capability by default.
+For NetBeans users, there is no need to setup Annotation Processing and Lombok, NetBeans has activated Annotation processing capability by default.
 
 In the next posts, let's try to create a project skeleton for our blog sample application.
