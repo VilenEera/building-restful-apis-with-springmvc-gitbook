@@ -1,8 +1,8 @@
 # Summary
 
 * [介绍](README.zh-cn.md)
-* [概述](overview.md)
-* [An introduction to REST](rest.md)
+* [概述](overview.zh-cn.md)
+* [REST 介绍](rest.zh-cn.md)
 * [Prerequisites](prerequisites.md)
 * [Getting Started](getting-started.md)
     * [Project skeleton](getting-started/init.md)
